@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Providing free WiFi, private parking, and a sun terrace, the recently renovated Peace and Joy Guest House in Lalitpur offers cozy, adults-only accommodations just a 6-minute walk from Patan Durbar Square.">
+  <meta name="keywords" content="Peace and Joy Guest House, Lalitpur, Patan Durbar Square, Kathmandu guest house, Nepal travel, boutique hotel Lalitpur, budget accommodation Patan, Booking.com Patan stay">
+  <meta name="author" content="Peace & Joy Guest House">
+  
+  <title>Peace & Joy Guest House | Patan, Lalitpur, Nepal (Official Booking Site)</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Blurred Navigation Bar -->
+  <header id="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="header-logo-link">
+        <i class="fas fa-dharmachakra"></i>
+        <div>
+          PEACE & JOY
+          <span class="logo-sub">GUEST HOUSE • PATAN</span>
+        </div>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active" id="nav-link-home">Home</a></li>
+          <li><a href="#story" id="nav-link-story">Our Story</a></li>
+          <li><a href="#rooms" id="nav-link-rooms">Rooms</a></li>
+          <li><a href="#amenities" id="nav-link-amenities">Amenities</a></li>
+          <li><a href="#guide" id="nav-link-guide">Local Guide</a></li>
+          <li><a href="#reviews" id="nav-link-reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="https://www.agoda.com/peace-and-joy-guest-house_2/hotel/all/kathmandu-np.html?countryId=120&finalPriceView=1&isShowMobileAppPrice=false&cid=-1&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2026-06-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&los=7&searchrequestid=e28bbd05-2904-401b-aa5a-c58d2e67cda0&ds=rvkvaEtiHRqidx2m" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="nav-btn-book">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-wrapper">
+      <div class="hero-bg" id="hero-background-media"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tagline" id="hero-tagline-text">Traditional Comfort, Modern Vibe</div>
+        <h1 id="hero-main-heading">A Warm Haven Near <span class="text-gold">Patan Durbar Square</span></h1>
+        <p id="hero-description-text">Experience the rich culture and peaceful community of Lalitpur at Peace & Joy. Clean air-conditioned rooms, a rooftop overlooking the city, and hospitality that feels like home.</p>
+        <div class="hero-actions-row">
+          <a href="#rooms" class="btn btn-gold" id="hero-explore-rooms">Explore Our Rooms</a>
+          <a href="#story" class="btn btn-secondary" id="hero-read-story" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Discover More</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Floating Check Availability Bar -->
+    <div class="search-bar-wrapper">
+      <div class="search-bar" id="floating-search-bar" role="search">
+        <div class="search-bar-item">
+          <label for="hero-room">Room Type</label>
+          <select id="hero-room">
+            <option value="deluxe">Deluxe King Room</option>
+            <option value="twin">Heritage Twin Room</option>
+          </select>
+        </div>
+        <div class="search-bar-item">
+          <label for="hero-checkin">Check-in</label>
+          <input type="date" id="hero-checkin">
+        </div>
+        <div class="search-bar-item">
+          <label for="hero-checkout">Check-out</label>
+          <input type="date" id="hero-checkout">
+        </div>
+        <div class="search-bar-item">
+          <label for="hero-guests">Guests</label>
+          <select id="hero-guests">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="hero-check-availability">Check Availability</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story & Heritage Section -->
+  <section id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content">
+          <span class="section-tag" id="story-section-tag">Authentic Hospitality</span>
+          <h2 id="story-main-heading">Welcome to Peace & Joy</h2>
+          
+          <!-- Booking.com Rating Badge -->
+          <div class="booking-rating-badge" id="booking-rating-badge">
+            <span class="rating-number">7.3</span>
+            <div class="rating-info">
+              <span class="rating-label">Good</span>
+              <span class="rating-reviews">16 reviews on Booking.com</span>
+            </div>
+          </div>
+          
+          <div class="section-divider" style="margin-left: 0; margin-top: 15px;"></div>
+          <p id="story-para-1">Nestled down a quiet street on <strong>Lonla Tole Marga</strong> in Patan, Lalitpur, <strong>Peace and Joy Guest House</strong> is a recently renovated, adults-only property designed for travelers seeking cozy accommodations, absolute comfort, and authentic local vibes.</p>
+          <p id="story-para-2">Located just a 6-minute walk from the spectacular <strong>Patan Durbar Square</strong> UNESCO World Heritage site, our guest house features parquet-floored rooms with private bathrooms, silent air conditioning, free high-speed Wi-Fi, and work desks. Guests can relax on our sun terrace, cook in the shared kitchen, and take advantage of daily housekeeping, bicycle parking, car hire, and full-day security.</p>
+          
+          <div class="story-highlights">
+            <div class="highlight-item" id="highlight-location">
+              <div class="highlight-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="highlight-text">
+                <h4>Prime Location</h4>
+                <p>5-6 min walk to Patan Durbar Square</p>
+              </div>
+            </div>
+            <div class="highlight-item" id="highlight-staff">
+              <div class="highlight-icon"><i class="fas fa-comments"></i></div>
+              <div class="highlight-text">
+                <h4>Multilingual Staff</h4>
+                <p>Fluent in English, Chinese, Japanese</p>
+              </div>
+            </div>
+            <div class="highlight-item" id="highlight-terrace">
+              <div class="highlight-icon"><i class="fas fa-cloud-sun"></i></div>
+              <div class="highlight-text">
+                <h4>Rooftop Escape</h4>
+                <p>Outdoor lounge overlooking the city</p>
+              </div>
+            </div>
+            <div class="highlight-item" id="highlight-security">
+              <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="highlight-text">
+                <h4>Full-day Security</h4>
+                <p>Peace of mind with 24/7 security</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://www.agoda.com/peace-and-joy-guest-house_2/hotel/all/kathmandu-np.html?countryId=120&finalPriceView=1&isShowMobileAppPrice=false&cid=-1&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2026-06-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&los=7&searchrequestid=e28bbd05-2904-401b-aa5a-c58d2e67cda0&ds=rvkvaEtiHRqidx2m" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="story-book-btn">Schedule Your Visit</a>
+        </div>
+        
+        <div class="story-images" id="story-image-collage">
+          <div class="story-img-main" id="story-main-img-box">
+            <img src="assets/facade.png" alt="Peace and Joy Guest House traditional brick facade" id="story-img-facade">
+          </div>
+          <div class="story-img-sub" id="story-sub-img-box">
+            <img src="assets/twin_room.png" alt="Peace and Joy Guest House cozy twin room interior" id="story-img-durbar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="rooms-section-tag">Cozy Accommodations</span>
+        <h2 class="section-title" id="rooms-main-heading">Comfortable Heritage Rooms</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc" id="rooms-section-description">We host a select group of air-conditioned rooms featuring warm brick accents, comfortable beds, modern en-suite private bathrooms, and fast, reliable Wi-Fi.</p>
+      </div>
+      
+      <!-- Room Filters to keep layout compact and user-friendly -->
+      <div class="room-filters" id="room-filter-container">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All Rooms</button>
+        <button class="filter-btn" data-filter="couple" id="btn-filter-couple">Double & Solo (Max 2)</button>
+        <button class="filter-btn" data-filter="group" id="btn-filter-group">Family & Group (3-4)</button>
+      </div>
+
+      <!-- Space-Optimized Master-Detail Showcase Layout -->
+      <div class="rooms-showcase-wrapper">
+        <!-- Sidebar / Swipeable Mobile Reel -->
+        <div class="rooms-sidebar">
+          <div class="rooms-list" id="rooms-compact-list">
+            <!-- Compact items dynamically populated by app.js -->
+          </div>
+        </div>
+        
+        <!-- Showcase Pane -->
+        <div class="room-showcase" id="rooms-detail-showcase">
+          <!-- Detailed room views dynamically populated by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Grid -->
+  <section id="amenities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="amenities-section-tag">Convenience & Services</span>
+        <h2 class="section-title" id="amenities-main-heading">Everything You Need for a Perfect Stay</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc" id="amenities-section-description">Our guest house is fully equipped to offer you the ease of a modern hotel mixed with the warm environment of a home stay.</p>
+      </div>
+      
+      <div class="amenities-grid" id="amenities-container">
+        <div class="amenity-card" id="amenity-wifi">
+          <div class="amenity-icon"><i class="fas fa-wifi"></i></div>
+          <h3>Free High-speed Wi-Fi</h3>
+          <p>Fiber internet connectivity available throughout all rooms, common areas, and the rooftop cafe.</p>
+        </div>
+        <div class="amenity-card" id="amenity-kitchen">
+          <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Shared Kitchen</h3>
+          <p>A fully-stocked kitchen for guests to cook meals, make tea/coffee, and store food during long stays.</p>
+        </div>
+        <div class="amenity-card" id="amenity-laundry">
+          <div class="amenity-icon"><i class="fas fa-tshirt"></i></div>
+          <h3>Laundry Services</h3>
+          <p>On-site professional laundry washing and drying assistance is available upon request.</p>
+        </div>
+        <div class="amenity-card" id="amenity-parking">
+          <div class="amenity-icon"><i class="fas fa-parking"></i></div>
+          <h3>Private Parking</h3>
+          <p>Complimentary secure bicycle and motorcycle parking on the property grounds for our guests.</p>
+        </div>
+        <div class="amenity-card" id="amenity-tours">
+          <div class="amenity-icon"><i class="fas fa-route"></i></div>
+          <h3>Tour & Car Hire Desk</h3>
+          <p>Need a flight reservation, cab hire, bike rental, or Patan/Kathmandu local guide? We have you covered.</p>
+        </div>
+        <div class="amenity-card" id="amenity-security-full">
+          <div class="amenity-icon"><i class="fas fa-user-shield"></i></div>
+          <h3>24/7 Security</h3>
+          <p>Gated property containing a full-time security guard presence and luggage storage vault.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooftop Cafe & Dining Experience -->
+  <section id="dining" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="experience-layout">
+        <div class="experience-img" id="dining-image-box">
+          <img src="assets/rooftop_terrace.png" alt="Rooftop terrace overlooking Patan city spires at sunset" id="dining-img-display">
+        </div>
+        <div class="experience-content">
+          <span class="section-tag" id="dining-section-tag">Rooftop Cafe & Dining</span>
+          <h2 id="dining-main-heading">Sunset & Spice on the Rooftop</h2>
+          <div class="section-divider" style="margin-left: 0;"></div>
+          <p id="dining-desc-1">Our rooftop terrace is the ultimate place to wind down. With cozy lounge seating, beautiful green plants, and a breathtaking panoramic view of the brick houses and historic temples of Patan.</p>
+          
+          <div class="menu-selector" id="dining-menu-tabs-row">
+            <button class="menu-tab active" data-tab="breakfast" id="tab-breakfast">Breakfast Set</button>
+            <button class="menu-tab" data-tab="drinks" id="tab-drinks">Cold Drinks & Cafes</button>
+          </div>
+          
+          <div class="menu-list" id="menu-list">
+            <!-- Dynamic breakfast/drinks list generated by app.js -->
+          </div>
+          
+          <p class="text-muted" style="font-size: 0.85rem;" id="breakfast-pricing-note">* À la carte or continental breakfast sets can be added directly to your room booking for only $6.00 per person per day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Explore / Interactive Guide Section -->
+  <section id="guide">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="guide-section-tag">Explore Patan</span>
+        <h2 class="section-title" id="guide-main-heading">Neighbourhood & Attractions Guide</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc" id="guide-section-description">We are located in the historic heart of Lalitpur. Click on the map pins or select from the list to preview amazing attractions nearby.</p>
+      </div>
+      
+      <div class="guide-layout">
+        <!-- Stylized Map -->
+        <div class="map-container" id="guide-map-wrapper">
+          <div class="guide-map-ui" id="guide-map-interactive">
+            <!-- Road Graphic Lines -->
+            <div class="map-road r1"></div>
+            <div class="map-road r2"></div>
+            <div class="map-road r3"></div>
+            <div class="map-road r4"></div>
+            <div class="map-river"></div>
+            
+            <!-- Map pins -->
+            <div class="map-pin guesthouse active" id="pin-guesthouse">
+              <div class="map-pin-inner"><i class="fas fa-hotel"></i></div>
+              <div class="map-pin-label">Peace & Joy</div>
+            </div>
+            
+            <div class="map-pin p1" id="pin-patan-square">
+              <div class="map-pin-inner"><i class="fas fa-gopuram"></i></div>
+              <div class="map-pin-label">Durbar Square</div>
+            </div>
+            
+            <div class="map-pin p2" id="pin-golden-temple">
+              <div class="map-pin-inner"><i class="fas fa-dharmachakra"></i></div>
+              <div class="map-pin-label">Golden Temple</div>
+            </div>
+            
+            <div class="map-pin p3" id="pin-mahaboudha">
+              <div class="map-pin-inner"><i class="fas fa-landmark"></i></div>
+              <div class="map-pin-label">Mahaboudha</div>
+            </div>
+            
+            <div class="map-pin p4" id="pin-pim-bahal">
+              <div class="map-pin-inner"><i class="fas fa-water"></i></div>
+              <div class="map-pin-label">Pim Bahal Pond</div>
+            </div>
+          </div>
+          
+          <!-- Slide Up Popup details -->
+          <div class="map-card-popup active" id="map-popup">
+            <div class="map-card-img">
+              <img src="assets/hero_background.png" alt="Attraction image display" id="map-popup-img">
+            </div>
+            <div class="map-card-info">
+              <h4>Peace & Joy Guest House</h4>
+              <p>Your cozy sanctuary, located on Lonla Tole Marga.</p>
+              <span>Distance: Center Point</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Guide items list -->
+        <div class="guide-list" id="guide-attractions-list">
+          <div class="guide-item active" data-id="guesthouse" id="guide-item-guesthouse">
+            <div class="guide-item-header">
+              <div class="guide-item-title"><i class="fas fa-star"></i> Peace & Joy Location</div>
+              <div class="guide-item-dist">Base</div>
+            </div>
+            <p>Our quiet street (Lonla Tole Marga) keeps noise away while remaining incredibly connected to Patan's best sights.</p>
+          </div>
+          <div class="guide-item" data-id="p1" id="guide-item-patan-square">
+            <div class="guide-item-header">
+              <div class="guide-item-title"><i class="fas fa-gopuram"></i> Patan Durbar Square</div>
+              <div class="guide-item-dist">5 min walk</div>
+            </div>
+            <p>A beautiful UNESCO world heritage square packed with royal palaces, wood-carved windows, and the ancient stone Krishna Mandir.</p>
+          </div>
+          <div class="guide-item" data-id="p2" id="guide-item-golden-temple">
+            <div class="guide-item-header">
+              <div class="guide-item-title"><i class="fas fa-dharmachakra"></i> The Golden Temple</div>
+              <div class="guide-item-dist">7 min walk</div>
+            </div>
+            <p>An intricate 12th-century Buddhist monastery, famous for its golden facade, prayer wheels, and serene spiritual environment.</p>
+          </div>
+          <div class="guide-item" data-id="p3" id="guide-item-mahaboudha">
+            <div class="guide-item-header">
+              <div class="guide-item-title"><i class="fas fa-landmark"></i> Mahaboudha Temple</div>
+              <div class="guide-item-dist">10 min walk</div>
+            </div>
+            <p>Often referred to as the temple of 1000 Buddhas. Every single terracotta brick has a unique carving of Buddha.</p>
+          </div>
+          <div class="guide-item" data-id="p4" id="guide-item-pim-bahal">
+            <div class="guide-item-header">
+              <div class="guide-item-title"><i class="fas fa-water"></i> Pim Bahal Pond</div>
+              <div class="guide-item-dist">8 min walk</div>
+            </div>
+            <p>A quiet, local reservoir featuring a gorgeous stupa. Locals gather around the water in the evenings to enjoy tea and talk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Guest Reviews Section -->
+  <section id="reviews" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="reviews-section-tag">Testimonials</span>
+        <h2 class="section-title" id="reviews-main-heading">What Our Guests Say</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc" id="reviews-section-description">We pride ourselves on providing a friendly and accommodating space. Here are real reviews left by our global family of guests.</p>
+      </div>
+      
+      <div class="reviews-container">
+        <!-- Review slide list wrapper -->
+        <div class="reviews-slider" id="review-slides-container">
+          <!-- Dynamic review slides loaded by app.js -->
+        </div>
+        
+        <!-- Navigation arrows -->
+        <div class="review-nav-btns">
+          <button class="review-nav-btn" id="prev-review-btn" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+          <button class="review-nav-btn" id="next-review-btn" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <!-- Add Review Form Form -->
+        <div class="add-review-section" id="write-review-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 20px;" id="write-review-heading"><i class="far fa-edit"></i> Share Your Experience</h3>
+          <form id="add-review-form">
+            <div class="review-form-grid">
+              <div class="form-group">
+                <label for="review-name">Your Name</label>
+                <input type="text" id="review-name" required placeholder="e.g. Emily Clark">
+              </div>
+              <div class="form-group">
+                <label for="review-country">Country / Residence</label>
+                <input type="text" id="review-country" required placeholder="e.g. Australia">
+              </div>
+            </div>
+            
+            <div class="review-form-grid" style="align-items: center;">
+              <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="star-rating-select" id="star-rating-buttons" role="radiogroup" aria-label="Rate from 1 to 5 stars">
+                  <i class="fas fa-star active" data-val="1" role="radio" aria-checked="false"></i>
+                  <i class="fas fa-star active" data-val="2" role="radio" aria-checked="false"></i>
+                  <i class="fas fa-star active" data-val="3" role="radio" aria-checked="false"></i>
+                  <i class="fas fa-star active" data-val="4" role="radio" aria-checked="false"></i>
+                  <i class="fas fa-star active" data-val="5" role="radio" aria-checked="true"></i>
+                </div>
+                <input type="hidden" id="review-rating-value" value="5">
+              </div>
+            </div>
+            
+            <div class="form-group form-group-full" style="margin-top: 15px; margin-bottom: 24px;">
+              <label for="review-comment">Your Review Comments</label>
+              <textarea id="review-comment" required placeholder="Tell other travelers about the rooms, staff hospitality, and location vibe..." rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-gold" id="review-submit-button">Submit My Review</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col" id="footer-col-about">
+        <div class="footer-logo">
+          <i class="fas fa-dharmachakra"></i> PEACE & JOY
+        </div>
+        <p style="margin-bottom: 20px; font-size: 0.9rem;">Comfortable, informal boutique guest house located in the ancient cultural heart of Patan (Lalitpur), Nepal. Enjoy central locations, multilingual service, and a scenic rooftop.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram Link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="Tripadvisor Link"><i class="fab fa-tripadvisor"></i></a>
+          <a href="#" class="social-btn" aria-label="Google Maps Location"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col" id="footer-col-links">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#rooms">Heritage Rooms</a></li>
+          <li><a href="#amenities">Guest Services</a></li>
+          <li><a href="#guide">Local attractions</a></li>
+          <li><a href="https://www.agoda.com/peace-and-joy-guest-house_2/hotel/all/kathmandu-np.html?countryId=120&finalPriceView=1&isShowMobileAppPrice=false&cid=-1&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2026-06-20&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=0&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&los=7&searchrequestid=e28bbd05-2904-401b-aa5a-c58d2e67cda0&ds=rvkvaEtiHRqidx2m" target="_blank" rel="noopener noreferrer">Book Accommodation</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col" id="footer-col-contact">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Lonla Tole Marga, Patan,<br>Lalitpur 44700, Nepal</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+977 986-6997780 / +977 985-1097167</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>inquiry.peaceandjoy@gmail.com</span>
+        </div>
+      </div>
+      
+      <div class="footer-col" id="footer-col-newsletter">
+        <h4>Stay Updated</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 16px;">Sign up to receive travel tips in Nepal, local cultural festival guides, and seasonal deals.</p>
+        <form class="footer-newsletter" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our newsletter!'); this.reset();">
+          <input type="email" placeholder="Your Email Address" required aria-label="Newsletter Email Input">
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p id="copyright-text">&copy; 2026 Peace & Joy Guest House Patan. All rights reserved.</p>
+      <p style="font-size:0.8rem; opacity:0.7;" id="credit-text">Designed with modern traditional vibes.</p>
+    </div>
+  </footer>
+
+  <!-- Generic Modals Backdrop -->
+  <div class="modal-overlay" id="generic-modal" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-content-inner">
+        <!-- Dynamic modal layout injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Floating Concierge Assistant -->
+  <div class="concierge-wrapper" id="concierge-assistant">
+    <button class="concierge-btn" id="concierge-chat-btn" aria-label="Open Guest House Assistant">
+      <i class="fas fa-concierge-bell"></i>
+    </button>
+    <div class="concierge-window" id="concierge-chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <i class="fas fa-dharmachakra"></i>
+          <div>
+            <h4>Peace & Joy Helpdesk</h4>
+            <span>Online • Multilingual Assistant</span>
+          </div>
+        </div>
+        <button id="concierge-chat-close" class="chat-close-btn" aria-label="Close Assistant"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-messages" id="concierge-chat-messages">
+        <div class="chat-msg concierge">
+          <div class="chat-msg-bubble">
+            Namaste! 🙏 Welcome to Peace & Joy Guest House. Ask me anything about our rooms, location, or rates!
+          </div>
+        </div>
+      </div>
+      <form class="chat-input-area" id="concierge-chat-form">
+        <input type="text" id="concierge-chat-input" placeholder="Type a message..." required autocomplete="off">
+        <button type="submit" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script Files Linked -->
+  <script src="booking.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
