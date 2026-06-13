@@ -2331,11 +2331,41 @@ footer {
     font-weight: 700;
   }
 
-  /* Book Now button injected via CSS at bottom of panel */
-  .nav-links.active li:last-child {
+  /* Book Now CTA button at bottom of mobile panel */
+  .nav-links.active .nav-book-now-item {
     padding: 24px 28px;
     border-top: 1px solid var(--border-color);
+    border-bottom: none !important;
     margin-top: auto;
+  }
+
+  .nav-links.active .nav-book-now-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--accent-brick);
+    color: #ffffff !important;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 20px rgba(140, 46, 43, 0.35);
+    transition: all 0.2s ease;
+  }
+
+  .nav-links.active .nav-book-now-item a:hover {
+    background: #a33530;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(140, 46, 43, 0.45);
+    padding-left: 28px; /* override the slide-in padding effect */
+    color: #ffffff !important;
+  }
+
+  .nav-links.active .nav-book-now-item a::before {
+    display: none; /* no accent bar for the button */
   }
 
   /* Theme toggle position alignment on mobile header */
