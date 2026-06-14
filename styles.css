@@ -249,6 +249,11 @@ header {
   letter-spacing: 1.5px;
 }
 
+/* Hide mobile-only "Book Now" item from nav-links on desktop */
+.nav-book-now-item {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -940,17 +945,19 @@ section {
 /* Dining & Experience Section */
 .experience-layout {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 70px;
-  align-items: center;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
 }
 
 .experience-img {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  height: 380px;
+  height: 480px;
   box-shadow: var(--card-shadow);
   border: 1px solid var(--border-color);
+  position: sticky;
+  top: 110px;
 }
 
 .experience-img img {
@@ -965,7 +972,7 @@ section {
 .experience-content h2 {
   font-size: 2.8rem;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .experience-content p {
@@ -2172,6 +2179,34 @@ footer {
 
 
 /* --- FLUID RESPONSIVE MEDIA QUERIES --- */
+
+/* Large laptop / small desktop: 1025px–1280px */
+@media (max-width: 1280px) {
+  .nav-links {
+    gap: 22px;
+  }
+
+  .experience-layout {
+    gap: 40px;
+  }
+
+  .experience-img {
+    height: 440px;
+  }
+
+  .experience-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .story-grid {
+    gap: 40px;
+  }
+
+  .guide-layout {
+    gap: 40px;
+  }
+}
+
 @media (max-width: 1024px) {
   section {
     padding: 90px 0;
@@ -2198,7 +2233,14 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .experience-layout,
+  .experience-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experience-img {
+    height: 360px;
+    position: static; /* Remove sticky on tablet */
+  }
   .guide-layout {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -2333,6 +2375,7 @@ footer {
 
   /* Book Now CTA button at bottom of mobile panel */
   .nav-links.active .nav-book-now-item {
+    display: block; /* Show Book Now inside mobile panel */
     padding: 24px 28px;
     border-top: 1px solid var(--border-color);
     border-bottom: none !important;
@@ -2503,11 +2546,13 @@ footer {
   }
 
   .experience-layout {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
   
   .experience-img {
-    height: 320px;
+    height: 280px;
+    position: static;
   }
 
   .menu-selector {
@@ -2525,6 +2570,7 @@ footer {
 
   /* Local Guide Map mobile scaling */
   .guide-layout {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
