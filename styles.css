@@ -623,7 +623,7 @@ section {
 }
 
 .section-title {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 2.5vw + 1rem, 2.6rem);
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -3242,5 +3242,23 @@ footer {
   }
 }
 
+/* Amenities heading — same size as other section titles, wider container to fit on one line */
+#amenities-main-heading {
+  font-size: clamp(2rem, 2.5vw + 1rem, 2.6rem);
+  white-space: nowrap;
+}
+
+#amenities .section-header {
+  max-width: 900px;
+}
+
+@media (max-width: 900px) {
+  #amenities-main-heading {
+    white-space: normal; /* Allow natural wrapping on small screens */
+  }
+  #amenities .section-header {
+    max-width: 100%;
+  }
+}
 
 
